@@ -1,0 +1,66 @@
+.peach-ginger {
+	background-color: #00BFFF;
+}
+
+.container-fluid {
+	/*background-color: #778899;*/
+}
+
+  div.circle {
+    border: 3px solid #5F9EA0;
+    border-radius: 50%;
+    width: 350px; height: 350px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 50px;
+    /*line-heigth: 500px;*/
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    color: black;
+    background-color: #5F9EA0;
+  }
+
+  .circle p {
+  	vertical-align: middle
+  }
+
+ .myOtherClass {
+ 	 border: 3px solid black /*#FF7F50*/;
+    border-radius: 50%;
+    width: 350px; height: 350px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: /*#FF7F50*/;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    color: black;
+  	font-size: 35px;
+  }
+
+  div.secondCircle {
+    border: 3px solid black /*#FF7F50*/;
+    border-radius: 50%;
+    width: 350px; height: 350px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: /*#FF7F50*/;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+  }
+
+h1 {
+	text-align: center;
+	padding-bottom: 150px;
+	font-style: Verdana;
+	font-size: 75px;
+	padding-top: 25px;
+}
+
+footer {
+	color: gray;
+}
