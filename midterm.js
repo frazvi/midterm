@@ -19,10 +19,13 @@ angular
 			console.log(randomIndex);
 			return $scope.paths[randomIndex]
 		}
+
 		$scope.paths = [
-			"question",
+			"question.html",
 			"videoOne",
 			"videoTwo"
 		]
+
+
 
 	}])
