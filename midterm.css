@@ -1,3 +1,74 @@
+.lightbox {
+  position: fixed;
+  top: 15px;
+  left: 50px;
+  background-color: rgba(0,0,0,0.85);
+  height: 95%;
+  width: 95%;
+  z-index: 5;
+  text-align: center;
+  border-radius: 15px;
+  }
+
+.lightbox h1 {
+  color: white;
+  padding-top: 30px;
+  font-size: 100px;
+}
+
+.lightbox p {
+  color: white;
+  padding-top: 100px;
+  font-size: 75px;
+}
+
+.lightbox button, .lightbox a {
+  font-size: 50px;
+  background-color: #5F9EA0;
+  margin: 100px;
+  border-radius: 15px;
+  border-color: #5F9EA0;
+  font-color: black;
+}
+
+.lightbox button:hover, .lightbox a:hover {
+  background-color: #5F9EA0;
+  border-color: #5F9EA0;
+
+}
+
+
+.allCircles:hover, .fourthCircle:hover, .lastCircle:hover {
+  transform:scale(1.10);
+}
+
+.firstCircle {
+  padding-top: 130px;
+}
+
+.secondCircle {
+  padding-top: 25px;
+}
+
+.thirdCircle {
+  padding-top: 130px;
+}
+.wholePage {
+  background-color: #b8b8b8;
+}
+
+.circle p{
+  position: absolute;
+}
+
+.row1 {
+  text-align: center;
+}
+
+.row2 {
+  text-align: center;
+}
+
 .peach-ginger {
 	background-color: #00BFFF;
 }
@@ -6,7 +77,7 @@
 	/*background-color: #778899;*/
 }
 
-  div.circle {
+  .allCircles  {
     border: 3px solid #5F9EA0;
     border-radius: 50%;
     width: 350px; height: 350px;
@@ -15,47 +86,66 @@
     font-size: 50px;
     /*line-heigth: 500px;*/
     vertical-align: middle;
-    display: table-cell;
+    display: inline-block;
     text-align: center;
     color: black;
     background-color: #5F9EA0;
+    position: relative;
+    margin-right: 60px;
+    margin-left: 25px;
+    transition: all 1s ease;
+    box-shadow: -10px 10px rgba(0,0,0,0.6);
   }
+
+
 
   .circle p {
   	vertical-align: middle
   }
 
- .myOtherClass {
- 	 border: 3px solid black /*#FF7F50*/;
+ .fourthCircle {
+ 	  border: 3px solid black #FF7F50;
     border-radius: 50%;
     width: 350px; height: 350px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: /*#FF7F50*/;
+    background-color: #FF7F50;
     vertical-align: middle;
-    display: table-cell;
-    text-align: center;
-    color: black;
+/*    display: inline-block;
+*/    position: relative;
+/*    text-align: center;
+*/    color: black;
   	font-size: 35px;
+/*    margin-left: 500px;
+*/    margin-top: 85px;
+    padding-top: 95px;
+    transition: all 1s ease;
+    box-shadow: -10px 10px rgba(0,0,0,0.6);
   }
 
-  div.secondCircle {
-    border: 3px solid black /*#FF7F50*/;
+  .lastCircle {
+    border: 3px solid black #FF7F50;
     border-radius: 50%;
     width: 350px; height: 350px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: /*#FF7F50*/;
+    background-color: #FF7F50;
     vertical-align: middle;
-    display: table-cell;
-    text-align: center;
-    color: black;
+/*    display: inline-block;
+*/    position: relative;
+/*    text-align: center;
+*/    color: black;
     font-size: 50px;
+/*    margin-left: 400px;
+*/    margin-top: 85px;
+    padding-top: 130px;
+    transition: all 1s ease;
+    box-shadow: -10px 10px rgba(0,0,0,0.6);
   }
 
 h1 {
 	text-align: center;
-	padding-bottom: 150px;
+	padding-bottom: 115px;
 	font-style: Verdana;
 	font-size: 75px;
 	padding-top: 25px;
@@ -64,3 +154,4 @@ h1 {
 footer {
 	color: gray;
 }
+

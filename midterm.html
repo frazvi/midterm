@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html my-app="midtermApp">
+<html ng-app="midtermApp">
 <head>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
@@ -10,30 +10,36 @@
 
 </head>
 
-<body my-controller="midtermTroller">
+<body class="wholePage" ng-controller="midtermTroller">
 
-<h1> Title </h1>
+<div class="lightbox" ng-show="shouldShow()">
+	<h1> An Experiment </h1>
+	<p> Would you like to answer a question? </p>
+	<a href="{{randomPath()}}" class="btn btn-lg btn-success"> Sure! </a>
+	<button ng-click="goHome()" class="btn btn-lg btn-danger"> No, thank you </button>
+</div>
+
+<h1> Time Metaphors </h1>
+<!-- <img src="http://www.tjg-designs.com/wp-content/themes/infocus/lib/scripts/timthumb/thumb.php?src=http://www.tjg-designs.com/wp-content/uploads/2014/03/emc2Formula.png&w=950&h=365&zc=1&q=100"> -->
 <div class="container-fluid">
-	<div class="row">
-		<div class="col-xs-4">
-			<div class="circle"><p a href="theQuestion.html"> The Question </p> </div>
-		</div>
-		<div class="col-xs-4">
-			<div class="circle"> Time Metaphors.  What Are They? </div>
-		</div>
-		<div class="col-xs-4">
-			<div class="circle"> The Results </div>
-		</div>
+	<div class="row1">
+		<!-- <div class="col-xs-4"> -->
+			<div class="allCircles firstCircle" ng-mouseover="enlarge"><p a href="theQuestion.html"> The Question </p> </div>
+		<!-- </div>
+		<div class="col-xs-4"> -->
+			<div class="allCircles secondCircle"><p> Time Metaphors.  What Are They? </p></div>
+		<!-- </div>
+		<div class="col-xs-4"> -->
+			<div class="allCircles thirdCircle"><p> The Results </p></div>
+		<!-- </div> -->
 	</div>
-	<div class="row">
-	<div class="col-xs-4"></div>
-	<div class="col-xs-4" class="smallerText">
-		<div class="myOtherClass"> Know some good time metaphors? Share them with us!</div>
+	<div class="row2">
+	<div class="col-xs-4 col-xs-offset-2" class="smallerText">
+		<div class="fourthCircle text-center">Know some good time metaphors? Share them with us!</div>
 	</div>
 	<div class="col-xs-4">
-		<div class="secondCircle"> About Us </div>
+		<div class="lastCircle text-center"> About Us </div>
 	</div>
-	<div class="col-xs-4"></div>
 	</div>
 </div>
 
