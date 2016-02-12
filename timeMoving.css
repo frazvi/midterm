@@ -14,13 +14,23 @@
 	background-color: gray;
 }
 
-.timeMovingImage {
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
+
+.image{
+	padding-left: 500px;
+	padding-top: 100px;
+}
+
+.imageText {
+	padding-left: 600px;
+	padding-top: 100px;
 }
 
 .tmPage .rPage {
 	display: block;
+}
+
+body {
+  background-color: white;
+  margin:80px 80px 100px 100px;
 }
 

@@ -48,3 +48,12 @@ body {
   padding:10px;
   background-color: ;
 }
+
+.chart {
+  float: left;
+  display: inline-block;
+}
+
+.data {
+  
+}
