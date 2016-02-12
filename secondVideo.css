@@ -1,0 +1,26 @@
+.wholePage {
+    background-color: rgba(0,0,0,0.85);
+  }
+
+.secondVideo {
+  position: fixed;
+  top: 65px;
+  left: 150px;
+  background-color: white;
+  height: 85%;
+  width: 85%;
+  text-align: center;
+  border-radius: 15px;
+  }
+
+.secondVideo iframe {
+  border-radius: 15px;
+}
+
+.secondVideo p {
+  color: black;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 25px;
+  padding-bottom: 40px;
+}

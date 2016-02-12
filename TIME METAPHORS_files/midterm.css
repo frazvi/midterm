@@ -9,7 +9,16 @@
   background-color: gray;
 } 
 
-
+.fixedFooter {
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  color:#CCC;
+  background:#333;
+  padding:25px;
+  background-color: gray;
+}
 
 .lightbox {
   position: fixed;
@@ -50,7 +59,12 @@
 
 }
 
-
+.fixedFooter p {
+  font-family: cursive;
+  font-color: black;
+  font-size: 25px;
+  color: #5F9EA0;
+}
 
 .einstein {
   width: 75px;
@@ -63,7 +77,7 @@
   display: inline-block;
 }
 
-/*.allCircles:hover, .fourthCircle:hover, .lastCircle:hover {
+.allCircles:hover, .fourthCircle:hover, .lastCircle:hover {
   transform:scale(1.10);
 }
 
@@ -98,7 +112,7 @@
 	/*background-color: #778899;*/
 }
 
-/*  .allCircles  {
+  .allCircles  {
     border: 3px solid #5F9EA0;
     border-radius: 50%;
     width: 300px; height: 300px;
@@ -120,7 +134,7 @@
 
 
 
-/*  .circle p {
+  .circle p {
   	vertical-align: middle
   }
 
@@ -144,7 +158,7 @@
     box-shadow: -10px 10px rgba(0,0,0,0.6);
   }
 
-/*  .lastCircle {
+  .lastCircle {
     border: 3px solid black #FF7F50;
     border-radius: 50%;
     width: 275px; height: 275px;
@@ -163,93 +177,29 @@
     transition: all 1s ease;
     box-shadow: -10px 10px rgba(0,0,0,0.6);
   }
-/*
+
 h1 {
 	text-align: center;
 	padding-bottom: 90px;
 	font-style: Verdana;
 	font-size: 75px;
 	padding-top: 25px;
-}*/*/*/
-*/
+}
+
 footer {
 	color: gray;
-}*/
+}
 
 .item {
   width: 100%;
   height: 75%;
 }
-.item > img {
-  height: 100%;
-  margin: 0 auto;
-}
+
 .timeMoving.png {
   height: 75%;
 }
 
 .carousel {
   width: 100%;
-  height: 100vh;
-}
-
-#myCarousel img {
-  height: 100%;
-}
-
-#test{
-  width: 100%;
   height: 75%;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.carousel-inner .item {
-    width: 100%;
-    height: 75%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.carousel-inner {
-  height: 75%;
-  width: 100%;
-}
-
-.carouselImage {
-  height: 100%;
-  width: 100%;
-}
-
-.carouselImage-tall {
-  height: 100%;
-  margin: 0 auto;
-  width: 75%;
-}
-
-body {
-  background-color: white;
-  margin:80px 80px 100px 100px;
-}
-div#fixedheader {
-  position:fixed;
-  top:0px;
-  left:0px;
-  width:100%;
-  color:#CCC;
-  background:#333;
-  padding:55px;
-}
-\
-</style>
-
-.carouselText {
-  position: absolute;
-  bottom: 10%;
-  left: 5%;
-  z-index: 20;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
 }

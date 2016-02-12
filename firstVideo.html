@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html my-app="theQuestionApp">
+<head>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+<link rel="stylesheet" type="text/css" href="firstVideo.css">
+<script type="text/javascript" src ="firstVideo.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js"></script>
+
+</head>
+<body class="wholePage">
+<div class="firstVideo" ng-show="showFirstVideo">
+	<p> Please watch this video, then answer the question that follows </p>
+	<div id="player"><iframe width="700" height="465" src="https://www.youtube.com/embed/l8eM81umzyQ?start=188" frameborder="0" showinfo=0 allowfullscreen ></iframe></div>
+</div>
+
+<script src="http://www.youtube.com/player_api"></script>
+
+    <script>
+
+        // create youtube player
+        var player;
+        function onYouTubePlayerAPIReady() {
+            player = new YT.Player('player', {
+              height: '390',
+              width: '640',
+              videoId: 'l8eM81umzyQ',
+              events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+              }
+            });
+        }
+
+        // autoplay video
+        function onPlayerReady(event) {
+        	player.seekTo(188)
+            event.target.playVideo();
+        }
+
+        // when video ends
+        function onPlayerStateChange(event) {        
+            if(event.data === 0) {          
+                window.location.href="theQuestion.html";
+            }
+        }
+
+    </script>
+</body>
+</html>

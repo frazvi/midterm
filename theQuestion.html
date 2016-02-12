@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="theQuestionApp">
+<head>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+<link rel="stylesheet" type="text/css" href="theQuestion.css">
+<script type="text/javascript" src ="theQuestion.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js"></script>
+
+</head>
+
+<body ng-controller="theQuestionTroller" class="wholePage">
+
+<div class='justQuestion' ng-show="showQuestion">
+<p> Your boss tells you you have a meeting on Wednesday. He then emails you to say that the meeting has been pushed back two days. </p>
+<p> What day is your meeting now? </p>
+
+<input ng-model="answer"> 
+<button ng-click="submission()" class="submitButton"> Submit </a></button>
+</div>
+
+
+
+</body>
+</html>

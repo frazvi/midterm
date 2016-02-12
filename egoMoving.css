@@ -1,0 +1,22 @@
+.timeMovingImage {
+	float: left;
+}
+
+.h1 {
+	text-align: center;
+}
+
+.h2 .explanation {
+	margin: 50px;
+}
+
+body {
+  background-color: white;
+  margin: 80px 100px 100px;
+}
+/*.inline-b {
+	display: inline-block;
+}
+.margin-auto {
+	margin: auto;
+}*/
